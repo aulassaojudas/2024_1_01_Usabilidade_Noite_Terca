@@ -1,12 +1,15 @@
 import React from "react";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
 function Header() {
   return (
-    <header className="meuHeader">
-      <h1> Minha aplicação react </h1>
-    </header>
+    <AppBar pasition="static">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          Minha aplicação
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
-
 export default Header;
-

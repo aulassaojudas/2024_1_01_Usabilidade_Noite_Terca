@@ -1,31 +1,29 @@
-.meuHeader {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh; /* Definindo altura exata para evitar expansão além da viewport */
 }
 
-.diplayFlex {
-display: flex; 
+.contentArea {
+  display: flex;
+  flex: 1;  /* Isso permite que a área de conteúdo expanda ocupando todo espaço disponível entre cabeçalho e rodapé */
+  overflow: hidden;  /* Impede que o conteúdo exceda a área visível causando scroll no nível do appContainer */
 }
 
-.displayFlexMain {
-flex: 1;
-padding: 20px;
+.mainContent {
+  flex-grow: 1;
+  overflow-y: auto;  /* Permite a rolagem do conteúdo principal, se necessário */
+  padding: 20px;  /* Espaçamento interno para o conteúdo principal */
 }
 
-.aside {
-  width: 200px;
-  height: 100vh;
-  background-Color: #f4f4f4;
-  padding: 20px;
+header, footer, aside, main {
+  width: 100%; /* Garante que todos os elementos se alinhem corretamente e ocupem a largura designada */
 }
 
-.App {
-text-align: center;
+aside {
+  width: 240px; /* Define uma largura fixa para o aside e permite a rolagem vertical se necessário */
+  overflow-y: auto;
+  height: calc(100vh - 128px); /* Altura calculada assumindo um cabeçalho e um rodapé de 64px cada */
 }
 
-.App-logo {
-height: 40vmin;
-pointer-events: none;
-}

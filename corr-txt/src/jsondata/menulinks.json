@@ -1,0 +1,18 @@
+[
+    {
+        "path": "/",
+        "label" : "Home"
+    },
+    {
+        "path": "/sobre",
+        "label" : "Sobre"
+    },
+    {
+        "path": "/contato",
+        "label" : "Contato"
+    },
+    {
+        "path": "/servico",
+        "label" : "Serviços"
+    }
+]

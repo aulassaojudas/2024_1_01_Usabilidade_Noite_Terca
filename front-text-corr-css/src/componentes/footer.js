@@ -1,18 +1,14 @@
-import React from "react";
+import React from 'react';
+import { Typography, Box } from '@mui/material';
 
 function Footer() {
-  return (
-    <footer
-      style={{
-        backgroundColor: "#333",
-        color: "white",
-        padding: "10px 20px",
-        textAlign: "center",
-      }}
-    >
-      <p>Todos os direitos reservada amim memso</p>
-    </footer>
-  );
+    return (
+        <Box sx={{ bgcolor: 'primary.main', p: 2, mt: 'auto', color: 'white' }}>
+            <Typography variant="body2" align="center">
+                © 2023 Minha Empresa
+            </Typography>
+        </Box>
+    );
 }
 
 export default Footer;
